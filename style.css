@@ -6,9 +6,9 @@ body {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 100vh;
     box-sizing: border-box;  
+    text-align: left;
 }
 
 /* Header Text Styles */
@@ -66,17 +66,23 @@ header .subtitle {
     bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
+    width: 160px;
+    max-width: calc(100% - 16px);
     font-size: 0.75rem;
     padding: 4px 8px;
     font-family: monospace;
     opacity: 0.7;
     line-height: 1.2;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 /* Functional Tab System */
 .tabs-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start; /* keep tabs aligned to the left edge */
+    align-items: flex-start;
     max-width: 650px;
     width: 100%;
     margin: 0 auto;
@@ -112,6 +118,7 @@ header .subtitle {
     margin-top: 20px;
     font-family: Arial, sans-serif; /* Clean font for body data */
     line-height: 1.6;
+    text-align: left;
 }
 
 .tabs-container input[type="radio"]:checked + label {
