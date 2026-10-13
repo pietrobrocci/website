@@ -37,7 +37,7 @@ header .subtitle {
 .profile-image-container {
     width: 220px;
     height: 220px;
-    margin: 0 auto 20px auto; /* tighter gap under the picture */
+    margin: 0 auto 8px auto; /* tightened gap under the picture (was 20px) */
     border: 2px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
@@ -63,16 +63,16 @@ header .subtitle {
 
 .image-placeholder-text {
     position: absolute;
-    bottom: 8px;
+    bottom: 4px; /* moved closer to the bottom edge (was 8px) */
     left: 50%;
     transform: translateX(-50%);
-    width: 160px;
-    max-width: calc(100% - 16px);
-    font-size: 0.75rem;
-    padding: 4px 8px;
+    width: 140px; /* slightly narrower caption */
+    max-width: calc(100% - 8px);
+    font-size: 0.7rem; /* slightly smaller caption text */
+    padding: 2px 6px; /* reduced padding to tighten the caption box */
     font-family: monospace;
     opacity: 0.7;
-    line-height: 1.2;
+    line-height: 1.1; /* tightened line height */
     text-align: center;
     box-sizing: border-box;
 }
