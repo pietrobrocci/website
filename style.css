@@ -77,6 +77,16 @@ header .subtitle {
     box-sizing: border-box;
 }
 
+/* Make the profile bio narrow and centered so it doesn't stretch full width */
+.profile-bio {
+    max-width: 600px;    /* limits how wide the paragraph can grow */
+    margin: 12px auto;   /* centers it horizontally and gives vertical spacing */
+    padding: 0 12px;     /* small horizontal padding for very narrow viewports */
+    text-align: left;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
 /* Functional Tab System */
 .tabs-container {
     display: flex;
