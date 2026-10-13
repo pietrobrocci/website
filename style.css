@@ -37,7 +37,7 @@ header .subtitle {
 .profile-image-container {
     width: 220px;
     height: 220px;
-    margin: 0 auto 2px auto; /* tightened gap under the picture (reduced ~4x) */
+    margin: 0 auto 8px auto; /* tightened gap under the picture (was 20px) */
     border: 2px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
@@ -63,13 +63,13 @@ header .subtitle {
 
 .image-placeholder-text {
     position: absolute;
-    bottom: 2px; /* moved closer to the bottom edge */
+    bottom: 4px; /* moved closer to the bottom edge (was 8px) */
     left: 50%;
     transform: translateX(-50%);
     width: 140px; /* slightly narrower caption */
     max-width: calc(100% - 8px);
     font-size: 0.7rem; /* slightly smaller caption text */
-    padding: 1px 2px; /* reduced padding to tighten the caption box */
+    padding: 2px 6px; /* reduced padding to tighten the caption box */
     font-family: monospace;
     opacity: 0.7;
     line-height: 1.1; /* tightened line height */
@@ -79,11 +79,11 @@ header .subtitle {
 
 /* Make the profile bio narrow and centered so it doesn't stretch full width */
 .profile-bio {
-    max-width: 600px;    /* limits how wide the paragraph can grow */
-    margin: 12px auto;   /* centers it horizontally and gives vertical spacing */
-    padding: 0 12px;     /* small horizontal padding for very narrow viewports */
+    max-width: 600px;
+    margin: 12px auto;
+    padding: 0 12px;
     text-align: left;
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.5;
 }
 
@@ -114,10 +114,6 @@ header .subtitle {
     border-bottom: 2px solid transparent;
     margin-right: 10px;
     transition: all 0.2s ease;
-}
-
-.tabs-container label:hover {
-    opacity: 0.8;
 }
 
 /* Dynamic Tab Content switching using CSS selectors */
