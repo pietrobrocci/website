@@ -77,7 +77,6 @@ header .subtitle {
     box-sizing: border-box;
 }
 
-/* Make the profile bio narrow and centered so it doesn't stretch full width */
 .profile-bio {
     max-width: 600px;
     margin: 12px auto;
@@ -114,6 +113,10 @@ header .subtitle {
     border-bottom: 2px solid transparent;
     margin-right: 10px;
     transition: all 0.2s ease;
+}
+
+.tabs-container label:hover {
+    opacity: 0.8;
 }
 
 /* Dynamic Tab Content switching using CSS selectors */
