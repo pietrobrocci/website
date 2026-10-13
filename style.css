@@ -35,24 +35,28 @@ header .subtitle {
 
 /* Profile Image Area */
 .profile-image-container {
-    width: 220px;
-    height: 220px;
-    margin: 0 auto 20px auto; /* tighter gap under the picture */
+    /* Make the image area share the same max-width and left padding as the tabs
+       so the caption aligns with the lower box. */
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto 20px auto; /* centered within the page like the tabs */
+    padding-left: 20px; /* match .tabs-container padding */
+    box-sizing: border-box;
     border: 2px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .profile-image {
-    width: 100%;
-    height: 100%;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     display: block;
     filter: grayscale(100%);
+    flex: 0 0 220px; /* keep image fixed size inside the wider container */
 }
 
 /* Hides placeholder text if an actual image loads successfully */
@@ -64,8 +68,8 @@ header .subtitle {
 .image-placeholder-text {
     position: absolute;
     bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 20px; /* align with the tabs' inner margin */
+    transform: none;
     font-size: 0.75rem;
     padding: 4px 8px;
     font-family: monospace;
